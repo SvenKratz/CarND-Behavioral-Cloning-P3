@@ -21,7 +21,7 @@ Using the Udacity provided simulator and my drive.py file, the car can be driven
 python3 drive.py vgg_256_128.h5
 ```
 
-I found out that loading saved models in Keras sensitive to the versions of Python, Tensorflow and Keras installed on the system. The system configuration I used is as follows:
+I found out that loading saved models in Keras is sensitive to the versions of Python, Tensorflow and Keras installed on the system. The system configuration I used for training and autonomous driving is as follows:
 
 * Python 3.6.2
 * Tensorflow 1.4.0
@@ -101,9 +101,4 @@ I did, however conduct steps to mitigate overfitting when implementing the model
 * Training data gathered while driving the track in reverse direction
 * Randomly shuffling datasets
 
-I ran the model in the simulator with the fully connected layers set to 128 and 64, which led to the vehicle leaving the track in sections where one lane margin was missing (e.g., shortly after the bridge). I thought that the model must gather more information about the environment so I doubled the fully connected layers to 256 and 64. The model then drove the car flawlessly around the track, as can be seen in the following video:
-
-<video width="320" height="160" controls>
-  <source src="output_video.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>  
+I ran the model in the simulator with the fully connected layers set to 128 and 64, which led to the vehicle leaving the track in sections where one lane margin was missing (e.g., shortly after the bridge). I thought that the model must gather more information about the environment so I doubled the fully connected layers to 256 and 64. The model then drove the car flawlessly around the track, as can be seen [in the video](output_video.mp4).
