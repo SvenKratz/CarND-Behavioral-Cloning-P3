@@ -88,7 +88,7 @@ I tried adding "recovery" data, but this turned out not to be as beneficial as e
 
 #### 1. Solution Design Approach
 
-I basically followed the "don't be a hero" approach and used an existing and proven model architecture, VGG16. I chose this model because of its high performance on the ImageNet dataset and the availability of pre-trained weights, which would save me time during training.
+I basically followed the "don't be a hero" approach and used an existing and proven model architecture, VGG16. I chose this model because of its high performance on the ImageNet dataset and the availability of pre-trained weights, which would save me time during training, as I could "freeze" the weights of the layers belonging to VGG16.
 
 VGG16 will, however only extract useful features from images, and not learn how to drive the car. Therefore, I added an additional two fully-connected layers to learn the driving task from the features provided by VGG.
 
