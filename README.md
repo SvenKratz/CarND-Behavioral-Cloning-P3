@@ -15,6 +15,6 @@ The repositry contains the following required files:
 
 I found out that loading saved models in Keras is sensitive to the versions of Python, Tensorflow and Keras installed on the system. The system configuration I used for training and autonomous driving is as follows:
 
-* Python 3.6.2
+* Python 3.6.x
 * Tensorflow 1.4.0
 * Keras 2.0.9
