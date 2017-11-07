@@ -105,4 +105,4 @@ I did, however conduct steps to mitigate overfitting when implementing the model
 
 I ran the model in the simulator with the fully connected layers set to 128 and 64, which led to the vehicle leaving the track in sections where one lane margin was missing (e.g., shortly after the bridge).
 
-I decided that the model must gather more information about the environment so I doubled the fully connected layers to 256 and 64. The model then drove the car flawlessly around the track, as can be seen [in the video](output_video.mp4).
+I decided that the fully-connected layers model must learn more information about the environment from the VGG16 image features so I doubled the fully connected layers to 256 and 64. The model then drove the car flawlessly around the track, as can be seen [in the video](output_video.mp4).
